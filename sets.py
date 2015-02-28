@@ -1,0 +1,16 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+a = raw_input()
+b = raw_input()
+c = raw_input()
+d = raw_input()
+lis = b.split()
+lis2 = d.split()
+newlis = list(map(int, lis))
+newlis2 = list(map(int, lis2))
+setty = set(newlis)
+setty2 = set(newlis2)
+difset = list(setty.difference(setty2))
+difset2 = list(setty2.difference(setty))
+final= sorted(difset+difset2)
+for i in final:
+    print(i)
